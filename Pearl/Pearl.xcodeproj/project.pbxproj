@@ -12,6 +12,7 @@
 		00440FBA1D1B8D230098C71E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00440FB81D1B8D230098C71E /* Main.storyboard */; };
 		00440FBC1D1B8D230098C71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00440FBB1D1B8D230098C71E /* Assets.xcassets */; };
 		00440FBF1D1B8D230098C71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */; };
+		B34937CD666745D62DB173EB /* Pods_Pearl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		00440FBB1D1B8D230098C71E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00440FBE1D1B8D230098C71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00440FC01D1B8D230098C71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pearl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A16DDDDCA855381D7555C10 /* Pods-Pearl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.release.xcconfig"; sourceTree = "<group>"; };
+		FF8CC6EC39673A536D6AF0DB /* Pods-Pearl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34937CD666745D62DB173EB /* Pods_Pearl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				00440FB31D1B8D230098C71E /* Pearl */,
 				00440FB21D1B8D230098C71E /* Products */,
+				AE797150E1396D0B71CDF234 /* Pods */,
+				89B0940749B5CCE7997ADA53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = Pearl;
 			sourceTree = "<group>";
 		};
+		89B0940749B5CCE7997ADA53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE797150E1396D0B71CDF234 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF8CC6EC39673A536D6AF0DB /* Pods-Pearl.debug.xcconfig */,
+				4A16DDDDCA855381D7555C10 /* Pods-Pearl.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00440FC31D1B8D230098C71E /* Build configuration list for PBXNativeTarget "Pearl" */;
 			buildPhases = (
+				32A9DA5FF34D8E1A609564DF /* 📦 Check Pods Manifest.lock */,
 				00440FAD1D1B8D230098C71E /* Sources */,
 				00440FAE1D1B8D230098C71E /* Frameworks */,
 				00440FAF1D1B8D230098C71E /* Resources */,
+				73EB1F6F384001140178868F /* 📦 Embed Pods Frameworks */,
+				F8E605F9F037FC63B457C052 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32A9DA5FF34D8E1A609564DF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		73EB1F6F384001140178868F /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pearl/Pods-Pearl-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E605F9F037FC63B457C052 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pearl/Pods-Pearl-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00440FAD1D1B8D230098C71E /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		00440FC41D1B8D230098C71E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF8CC6EC39673A536D6AF0DB /* Pods-Pearl.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pearl/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		00440FC51D1B8D230098C71E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A16DDDDCA855381D7555C10 /* Pods-Pearl.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Pearl/Info.plist;
@@ -286,6 +363,7 @@
 				00440FC51D1B8D230098C71E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
