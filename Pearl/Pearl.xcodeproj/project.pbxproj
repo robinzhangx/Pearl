@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00440FB51D1B8D230098C71E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FB41D1B8D230098C71E /* AppDelegate.swift */; };
-		00440FB71D1B8D230098C71E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FB61D1B8D230098C71E /* ViewController.swift */; };
 		00440FBA1D1B8D230098C71E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00440FB81D1B8D230098C71E /* Main.storyboard */; };
 		00440FBC1D1B8D230098C71E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00440FBB1D1B8D230098C71E /* Assets.xcassets */; };
 		00440FBF1D1B8D230098C71E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */; };
+		00440FCC1D1F82130098C71E /* PearlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCB1D1F82130098C71E /* PearlApp.swift */; };
+		00440FCE1D1F82700098C71E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCD1D1F82700098C71E /* BaseViewController.swift */; };
+		00440FD01D1F82B20098C71E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCF1D1F82B20098C71E /* BaseViewModel.swift */; };
 		B34937CD666745D62DB173EB /* Pods_Pearl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00440FB11D1B8D230098C71E /* Pearl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pearl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00440FB41D1B8D230098C71E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00440FB61D1B8D230098C71E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		00440FB91D1B8D230098C71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00440FBB1D1B8D230098C71E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00440FBE1D1B8D230098C71E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00440FC01D1B8D230098C71E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00440FCB1D1F82130098C71E /* PearlApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearlApp.swift; sourceTree = "<group>"; };
+		00440FCD1D1F82700098C71E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		00440FCF1D1F82B20098C71E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pearl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A16DDDDCA855381D7555C10 /* Pods-Pearl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.release.xcconfig"; sourceTree = "<group>"; };
 		FF8CC6EC39673A536D6AF0DB /* Pods-Pearl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.debug.xcconfig"; sourceTree = "<group>"; };
@@ -61,14 +65,56 @@
 		00440FB31D1B8D230098C71E /* Pearl */ = {
 			isa = PBXGroup;
 			children = (
+				00440FC61D1F80DC0098C71E /* App */,
+				00440FC71D1F80DC0098C71E /* Controllers */,
+				00440FC81D1F80DC0098C71E /* Models */,
+				00440FCA1D1F81A00098C71E /* Storyboards */,
 				00440FB41D1B8D230098C71E /* AppDelegate.swift */,
-				00440FB61D1B8D230098C71E /* ViewController.swift */,
-				00440FB81D1B8D230098C71E /* Main.storyboard */,
 				00440FBB1D1B8D230098C71E /* Assets.xcassets */,
-				00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */,
 				00440FC01D1B8D230098C71E /* Info.plist */,
 			);
 			path = Pearl;
+			sourceTree = "<group>";
+		};
+		00440FC61D1F80DC0098C71E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				00440FCB1D1F82130098C71E /* PearlApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		00440FC71D1F80DC0098C71E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				00440FC91D1F81760098C71E /* Common */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		00440FC81D1F80DC0098C71E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		00440FC91D1F81760098C71E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				00440FCD1D1F82700098C71E /* BaseViewController.swift */,
+				00440FCF1D1F82B20098C71E /* BaseViewModel.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		00440FCA1D1F81A00098C71E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */,
+				00440FB81D1B8D230098C71E /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		89B0940749B5CCE7997ADA53 /* Frameworks */ = {
@@ -210,8 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00440FB71D1B8D230098C71E /* ViewController.swift in Sources */,
+				00440FCC1D1F82130098C71E /* PearlApp.swift in Sources */,
+				00440FD01D1F82B20098C71E /* BaseViewModel.swift in Sources */,
 				00440FB51D1B8D230098C71E /* AppDelegate.swift in Sources */,
+				00440FCE1D1F82700098C71E /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +272,7 @@
 				00440FB91D1B8D230098C71E /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */ = {
@@ -232,6 +281,7 @@
 				00440FBE1D1B8D230098C71E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
