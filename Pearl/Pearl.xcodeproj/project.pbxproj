@@ -14,6 +14,9 @@
 		00440FCC1D1F82130098C71E /* PearlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCB1D1F82130098C71E /* PearlApp.swift */; };
 		00440FCE1D1F82700098C71E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCD1D1F82700098C71E /* BaseViewController.swift */; };
 		00440FD01D1F82B20098C71E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FCF1D1F82B20098C71E /* BaseViewModel.swift */; };
+		00440FD21D1F85540098C71E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00440FD11D1F85540098C71E /* Login.storyboard */; };
+		00440FD51D1FCA310098C71E /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FD41D1FCA310098C71E /* TimelineViewController.swift */; };
+		00440FD81D1FCDE70098C71E /* BaseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00440FD71D1FCDE70098C71E /* BaseViews.swift */; };
 		B34937CD666745D62DB173EB /* Pods_Pearl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		00440FCB1D1F82130098C71E /* PearlApp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearlApp.swift; sourceTree = "<group>"; };
 		00440FCD1D1F82700098C71E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		00440FCF1D1F82B20098C71E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		00440FD11D1F85540098C71E /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		00440FD41D1FCA310098C71E /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
+		00440FD71D1FCDE70098C71E /* BaseViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViews.swift; sourceTree = "<group>"; };
 		07E721C90DDB10E64D68B699 /* Pods_Pearl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pearl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A16DDDDCA855381D7555C10 /* Pods-Pearl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.release.xcconfig"; sourceTree = "<group>"; };
 		FF8CC6EC39673A536D6AF0DB /* Pods-Pearl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pearl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pearl/Pods-Pearl.debug.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +74,7 @@
 				00440FC61D1F80DC0098C71E /* App */,
 				00440FC71D1F80DC0098C71E /* Controllers */,
 				00440FC81D1F80DC0098C71E /* Models */,
+				00440FD61D1FCDD10098C71E /* Views */,
 				00440FCA1D1F81A00098C71E /* Storyboards */,
 				00440FB41D1B8D230098C71E /* AppDelegate.swift */,
 				00440FBB1D1B8D230098C71E /* Assets.xcassets */,
@@ -88,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				00440FC91D1F81760098C71E /* Common */,
+				00440FD31D1FCA1A0098C71E /* Timeline */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -113,8 +121,25 @@
 			children = (
 				00440FBD1D1B8D230098C71E /* LaunchScreen.storyboard */,
 				00440FB81D1B8D230098C71E /* Main.storyboard */,
+				00440FD11D1F85540098C71E /* Login.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		00440FD31D1FCA1A0098C71E /* Timeline */ = {
+			isa = PBXGroup;
+			children = (
+				00440FD41D1FCA310098C71E /* TimelineViewController.swift */,
+			);
+			path = Timeline;
+			sourceTree = "<group>";
+		};
+		00440FD61D1FCDD10098C71E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				00440FD71D1FCDE70098C71E /* BaseViews.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		89B0940749B5CCE7997ADA53 /* Frameworks */ = {
@@ -195,6 +220,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00440FD21D1F85540098C71E /* Login.storyboard in Resources */,
 				00440FBF1D1B8D230098C71E /* LaunchScreen.storyboard in Resources */,
 				00440FBC1D1B8D230098C71E /* Assets.xcassets in Resources */,
 				00440FBA1D1B8D230098C71E /* Main.storyboard in Resources */,
@@ -259,7 +285,9 @@
 				00440FCC1D1F82130098C71E /* PearlApp.swift in Sources */,
 				00440FD01D1F82B20098C71E /* BaseViewModel.swift in Sources */,
 				00440FB51D1B8D230098C71E /* AppDelegate.swift in Sources */,
+				00440FD81D1FCDE70098C71E /* BaseViews.swift in Sources */,
 				00440FCE1D1F82700098C71E /* BaseViewController.swift in Sources */,
+				00440FD51D1FCA310098C71E /* TimelineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
