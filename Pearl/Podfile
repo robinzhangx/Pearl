@@ -4,4 +4,5 @@ use_frameworks!
 target 'Pearl' do
   pod 'Alamofire',  '~> 3.4'
   pod 'RxSwift',    '~> 2.0'
+  pod 'SSKeychain'
 end
